@@ -114,4 +114,31 @@ h3.alt {
     color: #ffff;
     background-color: var(--tourazul);
     border-style: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.botao_roxo span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.botao_roxo span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.botao_roxo:hover span {
+    padding-right: 25px;
+}
+
+.botao_roxo:hover span:after {
+    opacity: 1;
+    right: 0;
 }
