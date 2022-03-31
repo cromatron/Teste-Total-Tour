@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Satisfy&display=swap');
+:root {
+    --tourazul: #464993;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #F9F9F9;
+}
+
+h3 {
+    color: var(--tourazul);
+}
+
+h3.alt {
+    color: #3A3A3A;
+}
+
+.header {
+    height: 100px;
+    background: #ffff;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1; */
+}
+
+.logo_header {
+    width: 250px;
+}
+
+.logo_texto {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.social {
+    display: flex;
+    margin: 0 15px;
+    color: var(--tourazul);
+    font-size: 14px;
+}
+
+.social a {
+    text-decoration: none;
+    color: var(--tourazul);
+    transition: 0.1s;
+}
+
+.social a:hover {
+    text-decoration: none;
+    color: #2c233d;
+    transition: 0.1s;
+}
+
+.social__icone img {
+    width: 30px;
+    display: inline-block;
+}
+
+.social__texto {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.banner_principal {
+    margin: auto;
+    width: 1200px;
+    height: 440px;
+    background: #3A3A3A url('../imagens/Fundo_banner_principal.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.filter {
+    background: linear-gradient(45deg, #0b424180 0%, #2c0f0080 72%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt_banner_main {
+    padding: 30px;
+    text-align: center;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto;
+    align-content: stretch;
+}
+
+.h3_banner {
+    color: #ffff;
+}
+
+.banner_font_alt {
+    font-size: 50px;
+    line-height: 2px;
+    font-family: 'Satisfy', cursive;
+}
+
+.botao_roxo {
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffff;
+    background-color: var(--tourazul);
+    border-style: none;
+}
