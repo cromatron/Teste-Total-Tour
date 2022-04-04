@@ -25,7 +25,6 @@ h3.alt {
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    /* z-index: 1; */
 }
 
 .logo_header {
@@ -200,9 +199,10 @@ h4.titulo {
 .imagem__destino {
     height: 300px;
     display: flex;
-    align-content: space-around;
+    justify-content: space-between;
     flex-flow: row nowrap;
     transition: 0.5s;
+    align-items: flex-start;
 }
 
 .cartao_destino:hover>.imagem__destino {
@@ -236,6 +236,19 @@ h4.titulo {
 
 .promo__destino {
     background: #000000;
+    font-weight: bold;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 8px;
+    height: 14px;
+}
+
+.aviao__destino img {
+    width: 18px;
+}
+
+.aviao__destino {
+    background: #B7B7B7;
     font-weight: bold;
     color: #ffff;
     border-radius: 5px;
@@ -383,12 +396,17 @@ h4.titulo {
 }
 
 .rodape {
-    text-align: center;
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
     margin: auto;
     height: 265px;
+    text-align: center;
+    width: 85%;
+    font-size: 12px;
+}
+
+.bloco__rodape {
+    width: 250px;
 }
