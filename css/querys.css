@@ -1,207 +1,394 @@
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 10px;
-        pointer-events: none;
-    }
-    div br {
-        display: none;
-    }
-    .header {
-        height: 100px;
-        background: #ffff;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo_header {
-        width: 200px;
-    }
-    .logo_texto {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        text-align: center;
-    }
-    .social {
-        display: none;
-    }
-    .main {
-        width: 100%;
-        margin: auto;
-    }
-    .txt_banner_main {
-        text-align: center;
-    }
-    .banner_font_alt {
-        font-size: 40px;
-        line-height: 35px;
-        font-family: 'Satisfy', cursive;
-    }
-    .botao_roxo {
-        text-decoration: none;
-        font-weight: 700;
-        border-style: none;
-        cursor: pointer;
-        display: inline-block;
-        margin-bottom: 15px;
-    }
-    .destaques {
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 10px 10px;
-        margin-top: 15px;
-        padding: 15px 35px;
-    }
-    .card_destaque {
-        font-size: 16px;
-        filter: drop-shadow(4px 5px 10px #3A3A3A20);
-    }
-    .destinos {
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 10px 10px;
-        margin-top: 15px;
-        padding: 15px 35px;
-    }
-    .destaques_2 {
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 10px 10px;
-        margin-top: 15px;
-        padding: 15px 35px;
-    }
-    .banner_footer {
-        margin-top: 15px;
-        height: 220px;
-    }
-    .footer {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        margin-top: 15px;
-        max-height: 220px;
-    }
-    .texto__banner {
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        font-size: 12px;
-    }
-    .texto__banner img {
-        width: 50px;
-    }
-    .texto__banner h2 {
-        font-size: 25px;
-        line-height: 24px;
-    }
-    .form__banner .email {
-        width: 90%;
-        height: 25px;
-    }
-    .form__banner .assinar {
-        align-self: center;
-        margin: 10px 0px;
-    }
-    .rodape {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: space-between;
-        margin: 15px auto;
-        height: 270px;
-        width: 90%;
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-    body {
-        background-color: blue;
-        pointer-events: none;
-    }
-    .destinos,
-    .destaques,
-    .destaques_2,
-    .banner_footer {
-        margin: 20px auto;
-        gap: 0px 12px;
-    }
-}
-
-@media only screen and (min-width: 768px)and (max-width: 992px) {
-    body {
-        background-color: green;
-    }
-    .destinos,
-    .destaques,
-    .destaques_2,
-    .banner_footer {
-        margin: 25px auto;
-        gap: 0px 12px;
-    }
-}
-
-@media only screen and (min-width: 992px)and (max-width: 1200px) {
-    body {
-        background-color: orange;
-        pointer-events: none;
-    }
-    .destinos,
-    .destaques,
-    .destaques_2,
-    .banner_footer {
-        margin: 30px auto;
-        gap: 0px 12px;
-    }
-    .logo_header {
-        width: 200px;
-    }
-    .logo_texto {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        text-align: center;
-        width: 40%;
-    }
-    .social__texto {
-        display: inline-block;
-        padding-right: 15px;
-        font-size: 10px;
-    }
-    .card_destaque {
-        height: 80%;
-        font-size: 13px;
-    }
-    .cartao_destino {
-        height: 300px;
-    }
-    .imagem__destino {
-        height: 200px;
-    }
-    .card_destaque_2 .content {
-        padding: 15px;
-    }
-    .texto__banner h2 {
-        font-size: 25px;
-        line-height: 24px;
-    }
-    .form__banner .email {
-        width: 90%;
-        height: 25px;
-    }
-    .form__banner .assinar {
-        align-self: center;
-        margin: 10px 0px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    body {
-        background-color: purple;
-    }
-}
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 10px;
+                pointer-events: none;
+            }
+            div br {
+                display: none;
+            }
+            .logo_header {
+                width: 200px;
+            }
+            .logo_texto {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                text-align: center;
+            }
+            .social {
+                display: none;
+            }
+            .main {
+                width: 100%;
+                margin: auto;
+            }
+            .txt_banner_main {
+                text-align: center;
+            }
+            .banner_font_alt {
+                font-size: 30px;
+                line-height: 30px;
+                font-family: 'Satisfy', cursive;
+            }
+            .botao_roxo {
+                text-decoration: none;
+                font-weight: 700;
+                border-style: none;
+                cursor: pointer;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+            .destaques {
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 10px 10px;
+                margin-top: 15px;
+                padding: 15px 35px;
+            }
+            .card_destaque {
+                font-size: 16px;
+                filter: drop-shadow(4px 5px 10px #3A3A3A20);
+            }
+            .destinos {
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 10px 10px;
+                margin-top: 15px;
+                padding: 15px 35px;
+            }
+            .destaques_2 {
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 10px 10px;
+                margin-top: 15px;
+                padding: 15px 35px;
+            }
+            .banner_footer {
+                margin-top: 15px;
+                height: 220px;
+            }
+            .footer {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                margin-top: 15px;
+                max-height: 220px;
+            }
+            .texto__banner {
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                font-size: 12px;
+            }
+            .texto__banner img {
+                width: 50px;
+            }
+            .texto__banner h2 {
+                font-size: 25px;
+                line-height: 24px;
+            }
+            .form__banner .email {
+                width: 90%;
+                height: 25px;
+            }
+            .form__banner .assinar {
+                align-self: center;
+                margin: 10px 0px;
+            }
+            .rodape {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: space-between;
+                margin: 15px auto;
+                height: 270px;
+                width: 90%;
+                font-size: 12px;
+            }
+        }
+        
+        @media only screen and (min-width: 600px) and (max-width: 768px) {
+            body {
+                pointer-events: none;
+            }
+            .destinos,
+            .destaques,
+            .destaques_2,
+            .banner_footer {
+                margin: 12px auto;
+                gap: 0px 12px;
+            }
+            .main {
+                width: 100%;
+            }
+            .footer,
+            .rodape,
+            .destaques_2,
+            .destaques,
+            .destinos {
+                width: 90%;
+            }
+            .logo_header {
+                width: 150px;
+            }
+            .logo_texto {
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                text-align: center;
+                width: 250px;
+            }
+            .social__icone img {
+                width: 20px;
+            }
+            .social {
+                margin: 0 5px;
+                font-size: 10px;
+            }
+            .card_destaque {
+                padding: 10px;
+                font-size: 10px;
+            }
+            .icone__card {
+                width: 30px;
+            }
+            .cartao_destino {
+                padding: 5px;
+                height: 250px;
+                font-size: 12px;
+            }
+            h4.titulo {
+                font-size: 12px;
+            }
+            .imagem__destino {
+                height: 130px;
+                display: flex;
+            }
+            .promo__destino {
+                border-radius: 5px;
+                padding: 6px;
+                height: 12px;
+                font-size: 10px;
+            }
+            .aviao__destino img {
+                width: 10px;
+            }
+            .aviao__destino {
+                height: 10px;
+                padding: 6px;
+            }
+            .card_destaque_2 .content {
+                font-size: 11px;
+                padding: 20px 10px;
+                height: 165px;
+            }
+            .card_destaque_2 .icone__card {
+                width: 40px;
+            }
+            .card_destaque_2 h2 {
+                font-size: 14px;
+            }
+            .texto__banner h2 {
+                font-size: 25px;
+                line-height: 24px;
+            }
+            .form__banner .email {
+                width: 90%;
+                height: 25px;
+            }
+            .form__banner .assinar {
+                align-self: center;
+                margin: 10px 0px;
+            }
+            .rodape {
+                height: 100px;
+            }
+        }
+        
+        @media only screen and (min-width: 768px)and (max-width: 992px) {
+            br {
+                display: none;
+            }
+            .destinos,
+            .destaques,
+            .destaques_2,
+            .banner_footer {
+                margin: 30px auto;
+                gap: 0px 15px;
+            }
+            .main {
+                width: 90%;
+            }
+            .logo_header {
+                width: 150px;
+            }
+            .logo_texto {
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                text-align: center;
+                width: 40%;
+            }
+            .social__texto {
+                display: inline-block;
+                padding-right: 15px;
+                font-size: 10px;
+            }
+            .social__icone img {
+                width: 20px;
+                display: inline-block;
+            }
+            .card_destaque {
+                padding: 10px;
+                font-size: 12px;
+            }
+            .icone__card {
+                width: 30px;
+            }
+            .cartao_destino {
+                padding: 10px;
+                height: 250px;
+            }
+            h4.titulo {
+                font-size: 14px;
+            }
+            .imagem__destino {
+                height: 120px;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row nowrap;
+                transition: 0.5s;
+                align-items: flex-start;
+            }
+            .promo__destino {
+                border-radius: 5px;
+                padding: 6px;
+                height: 12px;
+                font-size: 10px;
+            }
+            .aviao__destino img {
+                width: 10px;
+            }
+            .aviao__destino {
+                height: 10px;
+                padding: 6px;
+            }
+            .botao_magico {
+                align-self: center;
+                padding: 10px 15px;
+                border-radius: 5px;
+                border-style: none;
+                cursor: pointer;
+                margin: -25px;
+            }
+            .card_destaque_2 .content {
+                font-size: 12px;
+                padding: 20px 10px;
+                height: 200px;
+            }
+            .card_destaque_2 .icone__card {
+                width: 50px;
+            }
+            .card_destaque_2 h2 {
+                font-size: 14px;
+            }
+            .texto__banner h2 {
+                font-size: 25px;
+                line-height: 24px;
+            }
+            .form__banner .email {
+                width: 90%;
+                height: 25px;
+            }
+            .form__banner .assinar {
+                align-self: center;
+                margin: 10px 0px;
+            }
+            .rodape {
+                height: 100px;
+            }
+        }
+        
+        @media only screen and (min-width: 992px)and (max-width: 1200px) {
+            body {
+                pointer-events: none;
+            }
+            .destinos,
+            .destaques,
+            .destaques_2,
+            .banner_footer,
+            .rodape {
+                margin: 30px auto;
+                gap: 0px 12px;
+            }
+            .logo_header {
+                width: 200px;
+            }
+            .logo_texto {
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                text-align: center;
+                width: 40%;
+            }
+            .social__texto {
+                display: inline-block;
+                padding-right: 15px;
+                font-size: 10px;
+            }
+            .card_destaque {
+                height: 80%;
+                font-size: 13px;
+            }
+            .cartao_destino {
+                height: 300px;
+            }
+            .imagem__destino {
+                height: 200px;
+            }
+            .card_destaque_2 .content {
+                padding: 15px;
+            }
+            .texto__banner h2 {
+                font-size: 25px;
+                line-height: 24px;
+            }
+            .form__banner .email {
+                width: 90%;
+                height: 25px;
+            }
+            .form__banner .assinar {
+                align-self: center;
+                margin: 10px 0px;
+            }
+            .rodape {
+                height: 100px;
+            }
+        }
+        
+        @media only screen and (min-width: 1920px) {
+            body {
+                font-size: 16px;
+            }
+            .destinos,
+            .destaques,
+            .destaques_2,
+            .banner_footer,
+            .rodape {
+                margin: 65px auto;
+                gap: 0px 30px;
+            }
+            .main,
+            .footer,
+            .rodape {
+                width: 1200px;
+            }
+        }
